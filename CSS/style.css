@@ -66,7 +66,119 @@ header {
 
 .navbar a:hover {
     color: rgb(24, 3, 20);
-    background: #D9870A;
+    background: rgb(145, 248, 77);
     border-radius: 10px 7px;
 
 }
+
+
+
+
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: blueviolet;
+    background-image: url(/img/art_after_midnight_by_digitalmuses_dj7418a-pre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+
+.home-text {
+    flex: 1 1 17rem;
+    animation: slideInFromLeft 2.2s ease-out;
+    margin-top: 150px;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the images fill the container proportionally */
+    display: none;
+    /* Initially hide all images */
+    transition: transform 0.5s ease;
+    /* Smooth transition for switching slides */
+}
+
+.home-img img.active {
+    display: block;
+    /* Show the active image */
+    transform: scale(1);
+    /* Ensures the image is displayed at its normal size */
+}
+
+
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.home-text h1 {
+    margin-top: 2rem;
+    padding-left: 0;
+    font-size: 6.2rem !important;
+}
+
+.home-text p {
+    padding-left: 0; /* Removes left padding */
+    font-size: 1.3rem; /* Increases text size */
+    font-weight:450; /* Makes text bold */
+    font-style:initial; /* Adds italic style */
+    color: white; /* Ensures text color stays white */
+    
+}
+
+
+
+
+.btn {
+    background-color: transparent; /* Makes background transparent */
+    color: white;
+    font-weight: bold;
+    margin-top: 6rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 2rem;
+    display: inline-block; /* Ensures the button is visible */
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid rgb(145, 248, 77); /* Optional: Add a border for visibility */
+}
+
+.btn:hover {
+    background-color: rgba(215, 169, 95, 0.3); /* Light transparent background on hover */
+}
+
+
+.btn:hover {
+    background-color: #ffc166;
+    -moz-text-decoration-color: ;
+}
+
+
+
+
+
+/* .btn:hover {
+    background-color: #C08C45; /* Darker shade on hover */
+} */
