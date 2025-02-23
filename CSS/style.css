@@ -351,7 +351,10 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+
 }
+
+
 
 /* OUR COURSES PAGE */
 .graphic-design-page {
@@ -425,6 +428,7 @@ header {
 }
 
 
+
 /* The Application Form Page */
 body {
     background-image: url('/img/red_matter___revisit_by_benjhs_d5rgvax-fullview.jpg');
@@ -480,4 +484,22 @@ body {
 
 .submit-btn:hover {
     background: #218838;
+}
+
+ /* Responsive Design */
+ @media screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+    .form-group input, .form-group select {
+        padding: 8px;
+    }
+    .submit-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
