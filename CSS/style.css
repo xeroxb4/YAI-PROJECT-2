@@ -277,3 +277,12 @@ header {
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
