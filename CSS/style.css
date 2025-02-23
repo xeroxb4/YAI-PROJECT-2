@@ -360,11 +360,10 @@ header {
 
 
 @media (max-width: 768px) {
-    .home {
-        background-size: contain; /* Ensures full image is visible */
-        background-repeat: no-repeat;
-        height: auto;
-        padding: 50px 20px;
+    .home-section {
+        background-size: cover; /* Ensures proper scaling on smaller screens */
+        background-position: center;
+        height: 100vh; /* Full screen height */
     }
 
     .home-text {
