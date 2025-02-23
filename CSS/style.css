@@ -368,6 +368,7 @@ header {
 
 }
 
+/* For Home Page */
 
 @media (max-width: 768px) {
     .home {
@@ -398,6 +399,32 @@ header {
         padding: 10px 20px;
     }
 }
+
+
+
+/* Services Section */
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .services {
+        min-height: auto; /* Adjust height for smaller screens */
+        padding: 30px 10px;
+    }
+
+    .service-box {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 
 
