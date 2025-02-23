@@ -354,7 +354,7 @@ header {
 }
 
 /* OUR COURSES PAGE */
-body {
+.graphic-design-page {
     background-image: url('/img/sun_dropped_down_in_the_ocean_by_wonderlandartworks_dfqpi0r-pre.jpg');
     background-size: cover;
     background-position: center;

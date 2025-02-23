@@ -10,6 +10,6 @@ function sendToWhatsApp() {
     
     let message = `Application Form\n\nName: ${fullName}\nAddress: ${address}\nSelected Course: ${course}\nPhone: ${phone}`;
     
-    let whatsappURL = `https://wa.me/YOUR_NUMBER?text=${encodeURIComponent(message)}`;
+    let whatsappURL = `https://wa.me/+233201149027?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
