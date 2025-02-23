@@ -75,8 +75,8 @@ header {
 
 .home {
     width: 100%;
-    min-height: 100vh;
-    /* height: 100vh; */
+    /* min-height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -89,6 +89,8 @@ header {
     padding: 20px;
     justify-content: center;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -184,6 +186,14 @@ header {
     background-color: #050502;
     /* -moz-text-decoration-color: ; */
 }
+
+
+/* Fix extra gap before services */
+.services {
+    margin-top: 0; /* Removes unwanted space */
+    padding-top: 50px; /* Adjust as needed */
+}
+
 
 .services {
     background-image: url('/img/18_titaness_vs_mants_42_by_diablomes_dj5if2s-pre.jpg');
@@ -360,10 +370,11 @@ header {
 
 
 @media (max-width: 768px) {
-    .home-section {
+    .home {
         background-size: cover; /* Ensures proper scaling on smaller screens */
         background-position: center;
         height: 100vh; /* Full screen height */
+        padding-bottom: 0;
     }
 
     .home-text {
