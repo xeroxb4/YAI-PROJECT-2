@@ -75,7 +75,8 @@ header {
 
 .home {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -84,7 +85,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: right;
+    background-position: center;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -116,12 +120,12 @@ header {
 
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* display: flex; */
+    
+    /* align-items: center; */
+    
     /* Full viewport height */
-    text-align: center;
+    
 }
 
 .home-text {
@@ -354,53 +358,6 @@ header {
 
 }
 
-@media (max-width: 768px) {
-    .home {
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .home-text {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .home-text h1 {
-        font-size: 2.8rem; /* Adjusts title size for mobile */
-    }
-
-    .home-text p {
-        font-size: 1.4rem; /* Adjusts subtitle size for mobile */
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .home {
-        background-size: contain; /* Makes image fit on very small screens */
-        height: 100vh;
-    }
-
-    .home-text h1 {
-        font-size: 2.2rem;
-    }
-
-    .home-text p {
-        font-size: 1.2rem;
-    }
-
-    .btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-}
 
 
 
