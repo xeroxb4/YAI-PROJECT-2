@@ -80,7 +80,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     background-image: url(/img/home1.avif);
     background-repeat: no-repeat;
     background-size: cover;
