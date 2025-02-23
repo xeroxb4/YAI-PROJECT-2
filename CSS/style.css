@@ -366,6 +366,27 @@ header {
         height: auto;
         padding: 50px 20px;
     }
+
+    .home-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-text h1 {
+        font-size: 2rem; /* Adjust heading size */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .home-text p {
+        font-size: 1rem; /* Make paragraph text smaller */
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
 
 
