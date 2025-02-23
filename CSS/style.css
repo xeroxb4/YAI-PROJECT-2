@@ -184,50 +184,53 @@ header {
 .services {
     background-image: url('/img/18_titaness_vs_mants_42_by_diablomes_dj5if2s-pre.jpg');
     background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
 
-        .services h2 {
-            font-size: 2.5rem;
-            margin-top: 0px;
-            margin-bottom: 120px;
-            color: #037B85;
-        }
+.services h2 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 120px;
+    color: #037B85;
+}
 
-        .services-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            width: 80%;
-        }
-        .service-box {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            color: black;
-        }
-        .service-box a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-        .service-box a:hover {
-            color: #037B85;
-        }
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.service-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: black;
+}
+
+.service-box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.service-box a:hover {
+    color: #037B85;
+}
 
 .about {
     background-image: url('/img/abstract-background-paint-illustration-ink-backdrop-drop-creativity-generated-by-ai_188544-15660.jpg');
@@ -272,7 +275,8 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100vh; /* Changed from height to min-height */
+    min-height: 100vh;
+    /* Changed from height to min-height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,7 +328,7 @@ header {
     margin-top: 20px;
     gap: 15px;
     font-size: 30px;
-    color:rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .social-icon img {
@@ -358,21 +362,50 @@ body {
     font-family: Arial, sans-serif;
     overflow-y: auto;
 }
-.courses-container {
+
+.courses-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 4px;
+    position: relative;
+    
+}
+
+
+.course-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-top: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 380.2px;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.course-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: center;
     padding: 50px;
 }
-.course-box {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
+
 .apply-btn {
     display: inline-block;
     margin-top: 10px;
@@ -382,6 +415,11 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .apply-btn:hover {
     background: #218838;
+}
+
+.course-box:hover {
+    transform: scale(1.05) 
 }
