@@ -359,6 +359,14 @@ header {
 }
 
 
+@media (max-width: 768px) {
+    .home {
+        background-size: contain; /* Ensures full image is visible */
+        background-repeat: no-repeat;
+        height: auto;
+        padding: 50px 20px;
+    }
+}
 
 
 
