@@ -503,11 +503,6 @@ header {
 }
 
  /* Responsive Design */
- @media screen and (max-width: 1024px) {
-    .courses-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 @media screen and (max-width: 768px) {
     .courses-container {
         grid-template-columns: repeat(1, 1fr);
@@ -515,7 +510,26 @@ header {
     .title-container {
         font-size: 2rem;
     }
+
+    .services {
+        min-height: auto; /* Adjust height for smaller screens */
+        padding: 30px 10px;
+    }
+
+    .service-box {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
 }
+
+
 
 
 
