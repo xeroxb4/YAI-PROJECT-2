@@ -190,8 +190,9 @@ header {
 
 /* Fix extra gap before services */
 .services {
-    margin-top: 0; /* Removes unwanted space */
-    padding-top: 50px; /* Adjust as needed */
+    margin: 0; /* Removes unwanted space */
+    padding: 0; /* Adjust as needed */
+    overflow-y: hidden;
 }
 
 
@@ -201,13 +202,14 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    
 }
 
 .services h2 {
@@ -225,13 +227,29 @@ header {
 }
 
 .service-box {
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
-    color: black;
+    color: black; */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-top: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    color: #050502;
 }
 
 .service-box a {
