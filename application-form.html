@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <!-- link to box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.mini.css">
+    <!-- remix icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <!-- Link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Apply Here</title>
+</head>
+<body>
+
+
+    <div class="form-container">
+        <h2>Course Application Form</h2>
+        <form action="submit-form.php" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Selected Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select a Course --</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Typography">Typography</option>
+                    <option value="Adobe Photoshop">Adobe Photoshop</option>
+                    <option value="Adobe Illustrator">Adobe Illustrator</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+    
+</body>
+</html>
