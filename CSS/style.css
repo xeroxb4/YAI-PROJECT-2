@@ -427,6 +427,21 @@ header {
     transform: scale(1.05)
 }
 
+ /* Responsive Design */
+ @media screen and (max-width: 1024px) {
+    .courses-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .courses-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title-container {
+        font-size: 2rem;
+    }
+}
+
 
 
 /* The Application Form Page */
