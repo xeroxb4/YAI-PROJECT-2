@@ -230,3 +230,39 @@ header {
     border-radius: 1rem;
     object-fit: cover;
 }
+
+.contact {
+    background-image: url('/img/logo8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.contact button {
+    padding: 10px;
+    border: none;
+    background: rgb(145, 248, 77);
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
