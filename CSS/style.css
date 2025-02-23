@@ -373,7 +373,7 @@ header {
     }
 
     .home-text h1 {
-        font-size: 2rem; /* Adjust heading size */
+        font-size: 60px; /* Adjust heading size */
         line-height: 1.2;
         margin-bottom: 10px;
     }
