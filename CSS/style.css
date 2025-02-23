@@ -354,87 +354,54 @@ header {
 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        left: 0;
+    .home {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        padding: 20px;
         text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu-icon i {
-        font-size: 24px;
-        color: white;
-    }
-
-    .navbar.active {
-        display: flex;
     }
 
     .home-text {
-        text-align: center;
-        padding: 20px;
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .services-container {
-        flex-direction: column;
-        align-items: center;
+    .home-text h1 {
+        font-size: 2.8rem; /* Adjusts title size for mobile */
     }
 
-    .service-box {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image {
-        width: 80%;
-        margin: auto;
-    }
-
-    .contact form {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 2rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
+    .home-text p {
+        font-size: 1.4rem; /* Adjusts subtitle size for mobile */
     }
 
     .btn {
         font-size: 1rem;
-        padding: 8px 16px;
-    }
-
-    .service-box {
-        width: 100%;
+        padding: 10px 20px;
     }
 }
+
+@media (max-width: 480px) {
+    .home {
+        background-size: contain; /* Makes image fit on very small screens */
+        height: 100vh;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-text p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
 
 
 
