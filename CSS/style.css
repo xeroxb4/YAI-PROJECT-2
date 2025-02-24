@@ -123,11 +123,11 @@ header {
 
 .home {
     /* display: flex; */
-    
+
     /* align-items: center; */
-    
+
     /* Full viewport height */
-    
+
 }
 
 .home-text {
@@ -190,8 +190,10 @@ header {
 
 /* Fix extra gap before services */
 .services {
-    margin: 0; /* Removes unwanted space */
-    padding: 0; /* Adjust as needed */
+    margin: 0;
+    /* Removes unwanted space */
+    padding: 0;
+    /* Adjust as needed */
     overflow-y: hidden;
 }
 
@@ -209,7 +211,7 @@ header {
     align-items: center;
     text-align: center;
     color: white;
-    
+
 }
 
 .services h2 {
@@ -390,9 +392,11 @@ header {
 
 @media (max-width: 768px) {
     .home {
-        background-size: cover; /* Ensures proper scaling on smaller screens */
+        background-size: cover;
+        /* Ensures proper scaling on smaller screens */
         background-position: center;
-        height: 100vh; /* Full screen height */
+        height: 100vh;
+        /* Full screen height */
         padding-bottom: 0;
     }
 
@@ -402,13 +406,18 @@ header {
     }
 
     .home-text h1 {
-        font-size: 50px ; /* Adjust heading size */
+        font-size: 50px;
+        /* Adjust heading size */
         line-height: 1;
         margin-bottom: 10px;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
     }
 
     .home-text p {
-        font-size: 0.8rem; /* Make paragraph text smaller */
+        font-size: 0.8rem;
+        /* Make paragraph text smaller */
         margin-bottom: 20px;
     }
 
@@ -425,7 +434,8 @@ header {
 /* Responsive Fixes */
 @media (max-width: 768px) {
     .services {
-        min-height: auto; /* Adjust height for smaller screens */
+        min-height: auto;
+        /* Adjust height for smaller screens */
         padding: 30px 10px;
     }
 
@@ -523,17 +533,19 @@ header {
     transform: scale(1.05)
 }
 
- /* Responsive Design */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .courses-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .title-container {
         font-size: 2rem;
     }
 
     .services {
-        min-height: auto; /* Adjust height for smaller screens */
+        min-height: auto;
+        /* Adjust height for smaller screens */
         padding: 30px 10px;
     }
 
@@ -611,18 +623,22 @@ header {
     background: #218838;
 }
 
- /* Responsive Design */
- @media screen and (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .form-container {
         width: 90%;
         padding: 15px;
     }
+
     .form-container h2 {
         font-size: 1.5rem;
     }
-    .form-group input, .form-group select {
+
+    .form-group input,
+    .form-group select {
         padding: 8px;
     }
+
     .submit-btn {
         padding: 8px;
         font-size: 14px;
