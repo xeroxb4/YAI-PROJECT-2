@@ -470,6 +470,7 @@ header {
         flex-direction: column; /* Stack items on smaller screens */
         text-align: center;
         padding: 30px;
+        margin-top: 2rem;
     }
 
     .about-image {
@@ -487,6 +488,7 @@ header {
 @media (max-width: 600px) {
     .about {
         padding: 20px;
+        margin-top: 2rem;
     }
 
     .about-image {
