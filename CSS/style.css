@@ -432,7 +432,8 @@ header {
     .service-box {
         padding: 15px;
         height: 35vh;
-        margin: 10px;
+        margin: 15px;
+        margin-bottom: 1rem;
     }
 
     h2 {
