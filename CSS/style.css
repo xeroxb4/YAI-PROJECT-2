@@ -395,7 +395,7 @@ header {
         background-size: cover;
         /* Ensures proper scaling on smaller screens */
         background-position: center;
-        height: 100%;
+        height: 100vh;
         /* Full screen height */
         padding-bottom: 0;
     }
