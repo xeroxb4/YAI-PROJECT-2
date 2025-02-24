@@ -289,12 +289,17 @@ header {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.about-content h2 {
+    padding-bottom: 1.5rem;
 }
 
 /* Image Section */
 .about-image {
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: center;
 }
@@ -302,7 +307,7 @@ header {
 .about-image img {
     width: 100%;
     max-width: 900px;
-    border-radius: 1rem;
+    border-radius: 10rem;
     object-fit: cover;
 }
 
@@ -476,6 +481,7 @@ header {
     .about-image {
         width: 50%;
         margin-bottom: 20px;
+        
     }
 
     .about-content {
@@ -483,7 +489,12 @@ header {
         text-align: center;
         font-size: 16px;
     }
+
+    .about-content h2 {
+        padding-bottom: 1rem;
+    }
 }
+
 
 @media (max-width: 600px) {
     .about {
