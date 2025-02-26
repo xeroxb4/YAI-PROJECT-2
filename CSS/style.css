@@ -568,6 +568,16 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .service-box a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+        border-radius: 2rem;
+        border: 2px solid rgb(145, 248, 77);
+    }
+
     h2 {
         font-size: 2rem;
     }
