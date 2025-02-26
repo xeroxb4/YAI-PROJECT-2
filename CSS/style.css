@@ -650,6 +650,7 @@ footer {
         width: 50%; /* Make button wider on tablets */
         margin-left: 0; /* Center button */
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
     .map-container {
@@ -683,6 +684,7 @@ footer {
     .contact button {
         width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
     .contact-info {
