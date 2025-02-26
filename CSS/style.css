@@ -653,6 +653,11 @@ footer {
         margin-top: 60px;
     }
 
+    .contact-info {
+        
+        margin-top: 60px;
+    }
+
     .map-container {
         max-width: 90%;
         margin-left: auto;
@@ -684,12 +689,13 @@ footer {
     .contact button {
         width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
-        margin-top: 60px;
+        
     }
 
     .contact-info {
         max-width: 100%;
         text-align: center;
+        margin-top: 60px;
     }
 
     .map-container {
