@@ -444,13 +444,64 @@ header {
     opacity: 0.8;
 }
 
-.footer {
-    background: #111;
+/* for footer */
+footer {
+    background: black;
     color: white;
     text-align: center;
-    padding: 20px;
-
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff9900;
+}
+
+.footer-bottom-text {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
 
 /* For Home Page */
 
