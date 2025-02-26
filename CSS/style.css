@@ -370,17 +370,6 @@ header {
     font-size: 14px;
 }
 
-/* Adjust button styling */
-/* .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff6600;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
 
 .contact button {
     padding: 8px;
@@ -579,6 +568,75 @@ header {
         margin-bottom: 4rem;
     }
 }
+
+/* For Contact */
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* Tablets */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-form, 
+    .contact-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-details p {
+        justify-content: center;
+    }
+
+    .contact button {
+        width: 50%; /* Make button wider on tablets */
+        margin-left: 0; /* Center button */
+    }
+
+    .map-container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .contact h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact button {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .contact-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .map-container {
+        height: 250px;
+        width: 100%;
+    }
+}
+
 
 
 
