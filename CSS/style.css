@@ -574,7 +574,7 @@ footer {
         font-weight: bold;
         display: block;
         margin-top: 10px;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         border: 2px solid rgb(145, 248, 77);
     }
 
