@@ -18,9 +18,35 @@ function sendToWhatsApp() {
     
     let message = `Application Form\n\nName: ${fullName}\nAddress: ${address}\nSelected Course: ${course}\nPhone: ${phone}`;
     
-    let whatsappURL = `https://wa.me/+233201149027?text=${encodeURIComponent(message)}`;
+    let whatsappURL = `https://wa.me/+233 55 170 7703?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
+
+
+// For section navbar highlight
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".navbar a");
+  
+  window.addEventListener("scroll", () => {
+    let current = "";
+    document.querySelectorAll("section").forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").substring(1) === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+});
+
 
 
 // For Voice control

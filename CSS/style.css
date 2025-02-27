@@ -44,15 +44,17 @@ header {
 }
 
 .logo {
-    margin-left: 0;  /* Remove any margin pushing it right */
-    padding-left: 5px; /* Adjust for finer control */
+    margin-left: 0;
+    /* Remove any margin pushing it right */
+    padding-left: 5px;
+    /* Adjust for finer control */
 }
 
 .logo img {
     /* height: 50px; */
     width: 100px;
     display: block;
-    
+
 }
 
 
@@ -69,9 +71,16 @@ header {
     font-weight: 500;
 }
 
+.navbar a.active {
+    color: rgb(24, 3, 20);
+    background: #05CEE7;
+    border-radius: 10px 7px;
+  }
+  
+
 .navbar a:hover {
     color: rgb(24, 3, 20);
-    background: rgb(145, 248, 77);
+    background: #05CEE7;
     border-radius: 10px 7px;
 
 }
@@ -81,7 +90,7 @@ header {
     font-size: 30px;
     color: white;
     cursor: pointer;
-  }
+}
 
 
 .home {
@@ -188,13 +197,13 @@ header {
 }
 
 .btn:hover {
-    background-color: rgba(215, 169, 95, 0.3);
+    background-color: #0b6679;
     /* Light transparent background on hover */
 }
 
 
 .btn:hover {
-    background-color: #050502;
+    background-color: #0b6679;
     /* -moz-text-decoration-color: ; */
 }
 
@@ -247,7 +256,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
     color: black; */
-    background: rgba(255, 255, 255, 0.8);
+    background: #0b6679;
     padding: 10px;
     margin-top: 50px;
     margin: 30px;
@@ -262,19 +271,27 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     margin-bottom: 6rem;
-    color: #050502;
+    color: white;
 }
 
 .service-box a {
+    border: 2px solid #ff9900;
+    /* Orange Border */
+    border-radius: 2rem;;
+    /* Rounded Corners */
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     display: block;
     margin-top: 10px;
+    transition: all 0.4s ease;
+    display: inline-block;
+  padding: 0.5rem 0.5rem;
 }
 
 .service-box a:hover {
-    color: #037B85;
+    color: #ff9900;
+    
 }
 
 /* About Section */
@@ -385,8 +402,8 @@ header {
 .contact button {
     padding: 8px;
     border: none;
-    background: #cc5500;
-    color: black;
+    background: #0b6679;
+    color: white;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
@@ -395,7 +412,7 @@ header {
 }
 
 .contact-form button:hover {
-    background-color: rgb(145, 248, 77);
+    background-color: #cc5500;
 }
 
 
@@ -431,28 +448,19 @@ header {
     margin-bottom: 2rem;
 }
 
-.social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 15px;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.social-icon img {
-    width: 70px;
-    height: 70px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    filter: grayscale(100%);
+.social-icons a {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
     color: white;
-    filter: brightness(0) invert(1);
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
-.social-icon img:hover {
-    transform: scale(1.2);
-    filter: grayscale(0%) brightness(0) invert(1);
-    opacity: 0.8;
+.social-icons a:hover {
+    transform: rotate(360deg);
+    /* Full Rotation */
+    color: #ff9900;
+    /* Change Color to Orange */
 }
 
 /* for footer */
@@ -514,32 +522,55 @@ footer {
     opacity: 0.8;
 }
 
+
+/* for youtube */
+
+.youtube-subscribe {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.youtube-subscribe a {
+    color: #ff0000; /* YouTube Red */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.youtube-subscribe a:hover {
+    color: #ff9900; /* Hover effect */
+}
+
+
+
 /* For Navbar */
 
 @media (max-width: 768px) {
     .navbar {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width: 100%;
-      background: black;
-      text-align: center;
-      gap: 20px;
-      padding: 20px 0;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     }
-  
+
     .navbar.show {
-      display: flex;
+        display: flex;
     }
-  
+
     .hamburger {
-      display: block;
+        display: block;
     }
-  }
-  
+}
+
 
 /* For Home Page */
 
@@ -671,14 +702,16 @@ footer {
 /* For Contact */
 
 /* Responsive Design */
-@media (max-width: 1024px) { /* Tablets */
+@media (max-width: 1024px) {
+
+    /* Tablets */
     .contact-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .contact-form, 
+    .contact-form,
     .contact-info {
         max-width: 100%;
         text-align: center;
@@ -689,13 +722,15 @@ footer {
     }
 
     .contact button {
-        width: 50%; /* Make button wider on tablets */
-        margin-left: 0; /* Center button */
+        width: 50%;
+        /* Make button wider on tablets */
+        margin-left: 0;
+        /* Center button */
         margin-bottom: 20px;
     }
 
     .contact-info {
-        
+
         margin-top: 60px;
     }
 
@@ -706,7 +741,9 @@ footer {
     }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) {
+
+    /* Mobile */
     .contact h2 {
         font-size: 1.8rem;
         margin-bottom: 30px;
@@ -728,9 +765,10 @@ footer {
     }
 
     .contact button {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
+        /* Full width on mobile */
         margin-bottom: 20px;
-        
+
     }
 
     .contact-info {
@@ -800,10 +838,6 @@ footer {
 
 
 
-
-
-
-
 /* OUR COURSES PAGE */
 .graphic-design-page {
     background-image: url('/img/sun_dropped_down_in_the_ocean_by_wonderlandartworks_dfqpi0r-pre.jpg');
@@ -861,14 +895,14 @@ footer {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #28a745;
+    background: #0b6679;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .apply-btn:hover {
-    background: #218838;
+    background: #cc5500;
 }
 
 .course-box:hover {
@@ -905,9 +939,6 @@ footer {
 }
 
 
-
-
-
 /* The Application Form Page */
 .Application-page {
     background-image: url('/img/red_matter___revisit_by_benjhs_d5rgvax-fullview.jpg');
@@ -930,6 +961,7 @@ footer {
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #0b6679;
 }
 
 .form-group {
@@ -953,7 +985,7 @@ footer {
     display: block;
     width: 100%;
     padding: 10px;
-    background: #28a745;
+    background: #0b6679;
     color: white;
     text-align: center;
     border: none;
@@ -962,7 +994,7 @@ footer {
 }
 
 .submit-btn:hover {
-    background: #218838;
+    background: #cc5500;
 }
 
 /* Responsive Design */
@@ -984,5 +1016,98 @@ footer {
     .submit-btn {
         padding: 8px;
         font-size: 14px;
+    }
+}
+
+/* OUR WORKS PAGE */
+.OurWorks {
+    background-image: url('/img/sun_dropped_down_in_the_ocean_by_wonderlandartworks_dfqpi0r-pre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    padding: 50px;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.work-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.work-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.work-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.work-box h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #0b6679;
+}
+
+.work-box p {
+    font-size: 1rem;
+    color: black;
+}
+
+
+/* For our works */
+
+@media screen and (max-width: 1024px) {
+    .works-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .works-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .work-title {
+        font-size: 2rem;
+    }
+
+    .work-box {
+        margin-bottom: 30px;
     }
 }
