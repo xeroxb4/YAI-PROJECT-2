@@ -1103,11 +1103,24 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .title-container {
+        font-size: 2rem;
+    }
+
     .work-title {
         font-size: 2rem;
     }
 
     .work-box {
         margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 }
