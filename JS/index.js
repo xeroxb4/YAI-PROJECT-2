@@ -22,28 +22,22 @@ const recognition = new SpeechRecognition();
 recognition.lang = "en-US";
 recognition.interimResults = false;
 
-let isSpeaking = false; // Stop Self Loop
+let isSpeaking = false; // Stop Self Talking
 
 window.onload = function () {
-  askPermission(); // Ask for mic permission
+  recognition.start(); // Automatic Start
+  console.log("Voice Control Started Automatically");
+  speak("Voice Control Activated, Please Speak");
 };
-
-function askPermission() {
-  let permission = confirm("Allow Voice Control?");
-  if (permission) {
-    speak("Voice Control Activated. Please Speak");
-    recognition.start();
-  }
-}
 
 recognition.onstart = function () {
   console.log("Listening...");
-  playBeep();
+  playBeep(); // Beep Sound
 };
 
 recognition.onresult = function (event) {
   const command = event.results[0][0].transcript.toLowerCase();
-  console.log("Command:", command);
+  console.log("Command: ", command);
 
   if (isSpeaking) return;
 
@@ -53,7 +47,7 @@ recognition.onresult = function (event) {
     speak("Navigating to Home");
   }
 
-  if (command.includes("open services") || command.includes("services")) {
+  if (command.includes("services") || command.includes("open services")) {
     window.location.href = "#services";
     speak("Opening Services");
   }
@@ -83,39 +77,28 @@ recognition.onresult = function (event) {
     speak("Going Back to Previous Page");
   }
 
-  // Buttons
+  // Buttons Click
   if (command.includes("our courses")) {
     const courseBtn = document.querySelector(".service-box a[href='graphic-design.html']");
     if (courseBtn) {
       courseBtn.click();
       speak("Opening Our Courses");
-    } else {
-      speak("Course Button Not Found");
     }
   }
 
   if (command.includes("apply now")) {
-    const applyBtn = document.querySelector(".apply-btn");
-    if (applyBtn) {
-      applyBtn.click();
-      speak("Applying Now");
-    }
+    document.querySelector(".apply-btn").click();
+    speak("Applying Now");
   }
 
-  if (command.includes("submit application")) {
-    const submitBtn = document.querySelector(".submit-btn");
-    if (submitBtn) {
-      submitBtn.click();
-      speak("Submitting Application");
-    }
+  if (command.includes("submit application") || command.includes("submit form")) {
+    document.querySelector(".submit-btn").click();
+    speak("Submitting Application");
   }
 
   if (command.includes("send message")) {
-    const messageBtn = document.querySelector(".contact-form button");
-    if (messageBtn) {
-      messageBtn.click();
-      speak("Sending Message");
-    }
+    document.querySelector(".contact-form button").click();
+    speak("Sending Message");
   }
 };
 
@@ -124,7 +107,7 @@ function speak(text) {
   const speech = new SpeechSynthesisUtterance(text);
   speech.onend = function () {
     isSpeaking = false;
-    recognition.start();
+    recognition.start(); // Restart Listening
   };
   window.speechSynthesis.speak(speech);
 }
@@ -136,6 +119,7 @@ function playBeep() {
 
 recognition.onend = function () {
   if (!isSpeaking) {
+    console.log("Restarting Voice Control...");
     recognition.start();
   }
 };
