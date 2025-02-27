@@ -1,3 +1,11 @@
+// For navbar for devices
+function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+  }
+  
+
+//   For Whatsapp
 function toggleCourseBox(event) {
     event.currentTarget.classList.toggle('hidden');
 }
@@ -15,7 +23,7 @@ function sendToWhatsApp() {
 }
 
 
-
+// For Voice control
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
