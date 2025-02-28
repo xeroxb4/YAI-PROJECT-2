@@ -101,6 +101,11 @@ header {
 
 }
 
+.navbar.show {
+    display: flex; /* Show menu when active */
+    transform: translateX(0); /* Slide menu into view */
+}
+
 .hamburger {
     display: none;
     font-size: 30px;
