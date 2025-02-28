@@ -44,19 +44,25 @@ img {
 } */
 
 header {
-    position: fixed; /* Stays at the top */
+    position: fixed;
+    /* Stays at the top */
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 999; /* Always on top */
+    z-index: 999;
+    /* Always on top */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; /* Smaller padding to shrink header */
-    background: rgba(0, 0, 0, 0.2); 
-    backdrop-filter: blur(15px); /* Glass effect */
-    transition: all 0.4s ease-in-out; /* Smooth shrinking effect */
-    height: 50px; /* Smaller fixed height */
+    padding: 5px 20px;
+    /* Smaller padding to shrink header */
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    /* Glass effect */
+    transition: all 0.4s ease-in-out;
+    /* Smooth shrinking effect */
+    height: 50px;
+    /* Smaller fixed height */
     overflow: visible;
 }
 
@@ -69,7 +75,8 @@ header {
 }
 
 .logo img {
-    width: 50px; /* Smaller logo size */
+    width: 50px;
+    /* Smaller logo size */
     transition: 0.3s ease;
 }
 
@@ -93,8 +100,8 @@ header {
     color: rgb(24, 3, 20);
     background: #05CEE7;
     border-radius: 10px 7px;
-  }
-  
+}
+
 
 .navbar a:hover {
     color: rgb(24, 3, 20);
@@ -298,7 +305,8 @@ header {
 .service-box a {
     border: 2px solid #ff9900;
     /* Orange Border */
-    border-radius: 2rem;;
+    border-radius: 2rem;
+    ;
     /* Rounded Corners */
     text-decoration: none;
     color: white;
@@ -307,12 +315,12 @@ header {
     margin-top: 10px;
     transition: all 0.4s ease;
     display: inline-block;
-  padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .service-box a:hover {
     color: #ff9900;
-    
+
 }
 
 /* About Section */
@@ -554,14 +562,16 @@ footer {
 }
 
 .youtube-subscribe a {
-    color: #ff0000; /* YouTube Red */
+    color: #ff0000;
+    /* YouTube Red */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .youtube-subscribe a:hover {
-    color: #ff9900; /* Hover effect */
+    color: #ff9900;
+    /* Hover effect */
 }
 
 
@@ -595,7 +605,8 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        display: none; /* Hide only for smaller devices */
+        display: none;
+        /* Hide only for smaller devices */
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -606,7 +617,7 @@ footer {
         text-align: center;
         gap: 20px;
         padding: 20px 0;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
         border: 2px solid rgb(145, 248, 77);
         border-radius: 1rem;
     }
@@ -711,18 +722,24 @@ footer {
     }
 
     /* Fix White Gap on Mobile */
-html, body {
-    margin: 0; /* Remove unwanted margins */
-    padding: 0; /* Remove unwanted padding */
-    overflow-x: hidden; /* Prevent Horizontal Scroll */
-    width: 100%; /* Force full width on mobile */
-  }
-  
-  section {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Make sure no section is overflowing */
-  }
+    html,
+    body {
+        margin: 0;
+        /* Remove unwanted margins */
+        padding: 0;
+        /* Remove unwanted padding */
+        overflow-x: hidden;
+        /* Prevent Horizontal Scroll */
+        width: 100%;
+        /* Force full width on mobile */
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        /* Make sure no section is overflowing */
+    }
 }
 
 
@@ -753,6 +770,20 @@ html, body {
     .about-content h2 {
         padding-bottom: 1rem;
     }
+
+    /* Fix White Gap on Mobile */
+html, body {
+    margin: 0; /* Remove unwanted margins */
+    padding: 0; /* Remove unwanted padding */
+    overflow-x: hidden; /* Prevent Horizontal Scroll */
+    width: 100%; /* Force full width on mobile */
+  }
+  
+  section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Make sure no section is overflowing */
+  }
 }
 
 
@@ -772,6 +803,20 @@ html, body {
         padding: 15px;
         margin-bottom: 4rem;
     }
+
+    /* Fix White Gap on Mobile */
+html, body {
+    margin: 0; /* Remove unwanted margins */
+    padding: 0; /* Remove unwanted padding */
+    overflow-x: hidden; /* Prevent Horizontal Scroll */
+    width: 100%; /* Force full width on mobile */
+  }
+  
+  section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Make sure no section is overflowing */
+  }
 }
 
 /* For Contact */
@@ -1036,12 +1081,15 @@ html, body {
 .form-container {
     max-width: 500px;
     margin: 50px auto;
-    background: rgba(0, 0, 0, 0.2); /* Black background with 20% transparency */
+    background: rgba(0, 0, 0, 0.2);
+    /* Black background with 20% transparency */
     padding: 20px;
     border-radius: 10px;
-    
-    backdrop-filter: blur(10px); /* Subtle blur effect */
-    color: white; /* Text color */
+
+    backdrop-filter: blur(10px);
+    /* Subtle blur effect */
+    color: white;
+    /* Text color */
 }
 
 
