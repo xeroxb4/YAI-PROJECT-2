@@ -709,6 +709,20 @@ footer {
     h3 {
         font-size: 1.5rem;
     }
+
+    /* Fix White Gap on Mobile */
+html, body {
+    margin: 0; /* Remove unwanted margins */
+    padding: 0; /* Remove unwanted padding */
+    overflow-x: hidden; /* Prevent Horizontal Scroll */
+    width: 100%; /* Force full width on mobile */
+  }
+  
+  section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Make sure no section is overflowing */
+  }
 }
 
 
