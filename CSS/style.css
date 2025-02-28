@@ -691,9 +691,13 @@ footer {
 /* Responsive Fixes */
 @media (max-width: 768px) {
     .services {
-        min-height: auto;
-        /* Adjust height for smaller screens */
-        padding: 30px 10px;
+        padding: 0;
+        background-size: cover;
+        /* Ensures proper scaling on smaller screens */
+        background-position: center;
+        height: 100vh;
+        /* Full screen height */
+        padding-bottom: 0;
     }
 
     .service-box {
@@ -721,25 +725,6 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* Fix White Gap on Mobile */
-    html,
-    body {
-        margin: 0;
-        /* Remove unwanted margins */
-        padding: 0;
-        /* Remove unwanted padding */
-        overflow-x: hidden;
-        /* Prevent Horizontal Scroll */
-        width: 100%;
-        /* Force full width on mobile */
-    }
-
-    section {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        /* Make sure no section is overflowing */
-    }
 }
 
 
@@ -770,20 +755,6 @@ footer {
     .about-content h2 {
         padding-bottom: 1rem;
     }
-
-    /* Fix White Gap on Mobile */
-html, body {
-    margin: 0; /* Remove unwanted margins */
-    padding: 0; /* Remove unwanted padding */
-    overflow-x: hidden; /* Prevent Horizontal Scroll */
-    width: 100%; /* Force full width on mobile */
-  }
-  
-  section {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Make sure no section is overflowing */
-  }
 }
 
 
@@ -803,20 +774,6 @@ html, body {
         padding: 15px;
         margin-bottom: 4rem;
     }
-
-    /* Fix White Gap on Mobile */
-html, body {
-    margin: 0; /* Remove unwanted margins */
-    padding: 0; /* Remove unwanted padding */
-    overflow-x: hidden; /* Prevent Horizontal Scroll */
-    width: 100%; /* Force full width on mobile */
-  }
-  
-  section {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Make sure no section is overflowing */
-  }
 }
 
 /* For Contact */
