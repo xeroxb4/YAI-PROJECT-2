@@ -92,6 +92,12 @@ header {
     cursor: pointer;
 }
 
+.hamburger.active i {
+    transform: rotate(90deg);
+    transition: 0.4s ease;
+}
+
+
 
 .home {
     width: 100%;
@@ -597,6 +603,12 @@ footer {
         display: block;
         cursor: pointer;
     }
+
+    .hamburger.active i {
+        transform: rotate(90deg);
+        transition: 0.4s ease;
+    }
+    
 }
 
 

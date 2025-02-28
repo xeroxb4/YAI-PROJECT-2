@@ -1,9 +1,15 @@
 // For navbar for devices
 function toggleMenu() {
-    const navbar = document.getElementById("navbar");
-    navbar.classList.toggle("show");
-  }
+  const navbar = document.querySelector(".navbar"); // Use class selector instead of ID
+  navbar.classList.toggle("show");
+}
+
   
+
+  const hamburger = document.querySelector(".hamburger");
+hamburger.classList.toggle("active");
+
+
 
 //   For Whatsapp
 function toggleCourseBox(event) {
