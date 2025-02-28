@@ -547,7 +547,7 @@ footer {
 
 /* For Navbar */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         display: none;
         flex-direction: column;
@@ -569,7 +569,37 @@ footer {
     .hamburger {
         display: block;
     }
+} */
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2); /* Dark transparent background */
+        backdrop-filter: blur(15px); /* Glassmorphic blur effect */
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Softer shadow */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+        transition: all 0.4s ease-in-out; /* Smooth slide animation */
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
 }
+
+
 
 
 /* For Home Page */
@@ -949,14 +979,26 @@ footer {
     overflow-y: auto;
 }
 
-.form-container {
+/* .form-container {
     max-width: 500px;
     margin: 50px auto;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.2); /* Black background with 20% transparency */
+    padding: 20px;
+    border-radius: 10px;
+    
+    backdrop-filter: blur(10px); /* Subtle blur effect */
+    color: white; /* Text color */
 }
+
 
 .form-container h2 {
     text-align: center;
