@@ -246,8 +246,8 @@ header {
 }
 
 
-.services {
-    background-image: url('/img/18_titaness_vs_mants_42_by_diablomes_dj5if2s-pre.jpg');
+/* .services {
+    background-image: url('/img/splashing-colorful-powder-frame-white-background-ai-generative_123827-23707.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,44 @@ header {
     text-align: center;
     color: white;
 
+} */
+
+
+.services {
+    position: relative;
+    /* This makes sure the overlay sits on top */
+    background-image: url('/img/splashing-colorful-powder-frame-white-background-ai-generative_123827-23707.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    /* Make sure the content is above the overlay */
+    overflow: hidden;
+    /* Stops the white space */
 }
+
+.services::before {
+    content: "";
+    /* This creates the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* This is the overlay effect - You can change the opacity */
+    z-index: -1;
+    /* This makes sure the overlay is behind the content */
+}
+
 
 .services h2 {
     font-size: 2.5rem;
@@ -284,7 +321,9 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
     color: black; */
-    background: #0b6679;
+    /* background: #0b6679; */
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
     padding: 10px;
     margin-top: 50px;
     margin: 30px;
@@ -700,13 +739,6 @@ footer {
         /* Full screen height */
         padding-bottom: 0;
     }
-
-    html, body {
-        margin: 0; /* Remove unwanted margins */
-        padding: 0; /* Remove unwanted padding */
-        overflow-x: hidden; /* Prevent Horizontal Scroll */
-        width: 100%; /* Force full width on mobile */
-      }
 
     .service-box {
         padding: 15px;
