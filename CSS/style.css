@@ -692,13 +692,21 @@ footer {
 @media (max-width: 768px) {
     .services {
         padding: 0;
+        margin: 0;
         background-size: cover;
         /* Ensures proper scaling on smaller screens */
         background-position: center;
-        height: 100vh;
+        min-height: 100vh;
         /* Full screen height */
         padding-bottom: 0;
     }
+
+    html, body {
+        margin: 0; /* Remove unwanted margins */
+        padding: 0; /* Remove unwanted padding */
+        overflow-x: hidden; /* Prevent Horizontal Scroll */
+        width: 100%; /* Force full width on mobile */
+      }
 
     .service-box {
         padding: 15px;
