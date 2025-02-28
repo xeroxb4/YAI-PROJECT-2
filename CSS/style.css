@@ -579,25 +579,27 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        display: none; /* Keep this to hide the navbar initially */
         flex-direction: column;
         position: absolute;
         top: 80px;
-        right: 0; /* Aligns the navbar to the right */
-        width: 50%; /* You can adjust the width if you want */
-        background: rgba(0, 0, 0, 0.2); 
-        backdrop-filter: blur(15px); /* Glassmorphic blur effect */
-        text-align: left; /* Aligns the text to the left */
+        right: 0;
+        width: 50%; /* Adjust width */
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15px);
+        text-align: left;
         padding: 20px;
         box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
-        border-left: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
-        transition: transform 0.4s ease; /* Smooth animation */
-        transform: translateX(100%); /* Hides the navbar off-screen */
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth animation */
+        opacity: 0; /* Invisible by default */
+        visibility: hidden; /* Prevents interaction */
+        transform: translateX(100%); /* Hidden off-screen */
     }
 
     .navbar.show {
-        display: flex;
-        transform: translateX(0); /* Slides the navbar from the right */
+        opacity: 1; /* Show menu */
+        visibility: visible; /* Allow interaction */
+        transform: translateX(0); /* Slide in smoothly */
     }
 
     .hamburger {
