@@ -601,7 +601,8 @@ footer {
         top: 80px;
         right: 0;
         width: 50%;
-        background: black;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15px);
         text-align: right;
         gap: 20px;
         padding: 20px 0;
@@ -618,7 +619,13 @@ footer {
     .hamburger {
         display: block;
     }
+
+    .hamburger.active i {
+        transform: rotate(90deg);
+        transition: 0.4s ease;
+    }
 }
+
 
 
 
