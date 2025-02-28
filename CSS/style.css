@@ -57,7 +57,7 @@ header {
     backdrop-filter: blur(15px); /* Glass effect */
     transition: all 0.4s ease-in-out; /* Smooth shrinking effect */
     height: 50px; /* Smaller fixed height */
-    overflow: hidden;
+    overflow: visible;
 }
 
 
