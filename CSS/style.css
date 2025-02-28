@@ -31,7 +31,7 @@ img {
     background: var(--main-color);
 }
 
-header {
+/* header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,7 +41,25 @@ header {
     justify-content: space-between;
     padding: 10px 3%;
     transition: 0.4s;
+} */
+
+header {
+    position: fixed; /* Stays at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Always on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Smaller padding to shrink header */
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(15px); /* Glass effect */
+    transition: all 0.4s ease-in-out; /* Smooth shrinking effect */
+    height: 50px; /* Smaller fixed height */
+    overflow: hidden;
 }
+
 
 .logo {
     margin-left: 0;
@@ -51,10 +69,8 @@ header {
 }
 
 .logo img {
-    /* height: 50px; */
-    width: 100px;
-    display: block;
-
+    width: 50px; /* Smaller logo size */
+    transition: 0.3s ease;
 }
 
 
@@ -573,24 +589,25 @@ footer {
     }
 } */
 
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        position: absolute;
-        top: 80px; 
+        position: fixed; /* Fix the menu so it doesn't scroll */
+        top: 80px; /* Align below header */
         right: 0;
-        width: 50%; /* Adjust width */
-        height: 100vh; /* This makes the menu take full screen height */
+        width: 50%; 
+        height: 100vh; 
         background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(15px);
-        text-align: left;
-        padding: 50px 20px; /* Add padding to give breathing space */
+        padding: 50px 20px; 
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
         border-left: 1px solid rgba(255, 255, 255, 0.2);
         transition: opacity 0.4s ease, transform 0.4s ease; 
         opacity: 0;
         visibility: hidden;
         transform: translateX(100%);
-        overflow-y: auto; /* Allows scrolling inside the navbar if content is too long */
+        overflow-y: auto; 
     }
 
     .navbar.show {
@@ -598,12 +615,8 @@ footer {
         visibility: visible;
         transform: translateX(0);
     }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
 }
+
 
 
 
