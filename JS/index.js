@@ -29,6 +29,16 @@ function sendToWhatsApp() {
 }
 
 
+// Menu links
+const menuLinks = document.querySelectorAll(".navbar a");
+
+menuLinks.forEach(link => {
+    link.onclick = () => {
+        document.querySelector(".navbar").classList.remove("show");
+    }
+});
+
+
 // For section navbar highlight
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".navbar a");
@@ -81,6 +91,8 @@ recognition.onresult = function (event) {
 
   if (isSpeaking) return;
 
+
+
   // Page Navigation
   if (command.includes("go to home") || command.includes("home")) {
     window.location.href = "#homes";
@@ -117,6 +129,8 @@ recognition.onresult = function (event) {
     speak("Going Back to Previous Page");
   }
 
+
+
   // Buttons Click
   if (command.includes("our courses")) {
     const courseBtn = document.querySelector(".service-box a[href='graphic-design.html']");
@@ -142,6 +156,9 @@ recognition.onresult = function (event) {
   }
 };
 
+
+
+// Speech
 function speak(text) {
   isSpeaking = true;
   const speech = new SpeechSynthesisUtterance(text);
