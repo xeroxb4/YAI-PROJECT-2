@@ -399,7 +399,7 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
     /* z-index: 1;
-} */ */
+} */ 
 
 .about-section-content {
     /* position: relative; */
@@ -1035,7 +1035,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .about {
+    .about-section {
         flex-direction: column;
         /* Stack items on smaller screens */
         text-align: center;
@@ -1062,7 +1062,7 @@ footer {
 
 
 @media (max-width: 600px) {
-    .about {
+    .about-section {
         /* padding: 20px; */
 
     }
