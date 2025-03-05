@@ -375,7 +375,7 @@ header {
 /* About Section */
 .about-section {
     position: relative;
-    background-image: url('/img/abt9a.avif');
+    background-image: url('/img/abt9a.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
