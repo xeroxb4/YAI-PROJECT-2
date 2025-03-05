@@ -1017,10 +1017,10 @@ footer {
 
     .service-box {
         padding: 15px;
-        height: 60vh;
+        height: 50vh;
         margin: 15px;
         margin-bottom: 1rem;
-        width: 90%;
+        width: 100%;
     }
 
     .service-box a {
