@@ -1046,6 +1046,7 @@ footer {
 
     .service-box, p {
         font-size: 14px;
+        margin-bottom: 3px;
     }
 
 }
