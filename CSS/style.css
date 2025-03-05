@@ -1020,7 +1020,7 @@ footer {
         height: 45vh;
         margin: 15px;
         margin-bottom: 1rem;
-        /* width: 100%; */
+        
     }
 
     .service-box a {
@@ -1031,7 +1031,7 @@ footer {
         margin-top: 10px;
         border-radius: 30px;
         border: 2px solid #037B85;
-        padding: 10px 0;
+        padding: 5px 0;
         margin-bottom: 10px;
     }
 
