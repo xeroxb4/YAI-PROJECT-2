@@ -1019,10 +1019,9 @@ footer {
     .service-box {
         padding: 15px;
         height: 41vh;
-        margin-top: -2rem;
-        margin-bottom: 1.5rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
 
-        
     }
 
     .service-box a {
@@ -1037,12 +1036,12 @@ footer {
         margin-bottom: 10px;
     }
 
-    h2 {
-        font-size: 2rem;
-        
+    .services, h2 {
+        font-size: 1.5rem;
+        margin-bottom: -1rem;
     }
 
-    .service-box,h3 {
+    .service-box, h3 {
         font-size: 14.5px;
     }
 
