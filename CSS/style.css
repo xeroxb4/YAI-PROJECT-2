@@ -327,6 +327,7 @@ header {
     padding: 10px;
     margin-top: 50px;
     margin: 30px;
+    border: solid #f5a007;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 320px;
@@ -341,6 +342,14 @@ header {
     color: white;
 }
 
+.service-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #f5a007;
+
+}
+
+
+
 .service-box a {
     border: 2px solid #ff9900;
     /* Orange Border */
@@ -354,11 +363,13 @@ header {
     margin-top: 10px;
     transition: all 0.4s ease;
     display: inline-block;
+    
     padding: 0.5rem 0.5rem;
 }
 
 .service-box a:hover {
     color: #ff9900;
+    transform: scale(1.02);
 
 }
 
