@@ -1013,6 +1013,7 @@ footer {
         min-height: 100vh;
         /* Full screen height */
         padding-bottom: 0;
+        margin-bottom: 1rem;
     }
 
     .service-box {
