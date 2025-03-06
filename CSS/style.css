@@ -1710,6 +1710,16 @@ footer {
 }
 
 /* OUR WORKS PAGE */
+/* .our-works {
+    background-image: url('/img/abt5.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    padding: 50px;
+} */
+
 .our-works {
     background-image: url('/img/abt5.webp');
     background-size: cover;
@@ -1718,6 +1728,9 @@ footer {
     font-family: Arial, sans-serif;
     overflow-y: auto;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .our-works::before {
@@ -1732,9 +1745,16 @@ footer {
     pointer-events: none;
 }
 
-.works-container {
+.works-container, {
     position:absolute;
     z-index: 2; /* Brings content above the overlay */
+}
+
+.work-title {
+    /* position:absolute; */
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Brings content above the overlay */
 }
 
 .our-works {
@@ -1755,14 +1775,27 @@ footer {
     margin-top: -1rem;
 }
 
-.works-container {
+/* .works-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 30px;
     justify-content:space-between;
     padding: 50px;
     margin-top: -4.5rem;
     
+} */
+
+.works-container {
+    position: relative; /* Changed from absolute to relative */
+    z-index: 2; /* Brings content above the overlay */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px; /* Added a max-width */
+    width: 100%; /* Makes it responsive */
+    margin: 0 auto; /* Centers the grid horizontally */
+    padding: 50px;
+    margin-top: -4.5rem;
 }
 
 .work-box {
@@ -1856,11 +1889,11 @@ footer {
         padding: 40px;
     }
     .works-container {
-        grid-template-columns: repeat(2, 1fr); /* 3 columns for medium and larger devices */
-        gap: 40px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
         padding: 40px;
         margin-top: -4rem;
-        margin: 35%;
+        
     }
     .work-title {
         font-size: 2.3rem;
@@ -1874,7 +1907,7 @@ footer {
     }
     .works-container {
         grid-template-columns: repeat(3, 1fr); /* 3 columns for desktops */
-        gap: 50px;
+        gap: 40px;
         padding: 50px;
         margin-top: -4.5rem;
     }
@@ -1882,3 +1915,4 @@ footer {
         font-size: 2.5rem;
     }
 }
+
