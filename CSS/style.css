@@ -1732,8 +1732,8 @@ footer {
     pointer-events: none;
 }
 
-.works-container, .work-title {
-    position: relative;
+.works-container {
+    position:absolute;
     z-index: 2; /* Brings content above the overlay */
 }
 
@@ -1758,10 +1758,11 @@ footer {
 .works-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: center;
+    gap: 50px;
+    justify-content:space-between;
     padding: 50px;
     margin-top: -4.5rem;
+    
 }
 
 .work-box {
@@ -1775,6 +1776,7 @@ footer {
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    width: 100%;
 }
 
 .work-box img {
@@ -1804,66 +1806,78 @@ footer {
 /* For our works */
 
 /* Media Queries for Responsive Design */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Extra small devices (small phones, up to 480px) */
+@media (max-width: 480px) {
     .our-works {
         padding: 20px;
     }
-    
     .works-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for very small devices */
         gap: 15px;
-        width: 90%;
+        padding: 15px;
+        margin-top: -2rem;
     }
-    
+    .work-title {
+        font-size: 1.8rem;
+    }
     .work-box h3 {
         font-size: 1rem;
+    }
+    .work-box p {
+        font-size: 0.8rem;
+    }
+    .work-box img {
+        height: 150px;
+    }
+}
+
+/* Small devices (phones, 481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .our-works {
+        padding: 25px;
+    }
+    .works-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small devices */
+        gap: 20px;
+        padding: 20px;
+        margin-top: -2.5rem;
+    }
+    .work-title {
+        font-size: 2rem;
+    }
+    .work-box h3 {
+        font-size: 1.2rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .our-works {
-        padding: 25px;
+        padding: 40px;
     }
-    
     .works-container {
-        gap: 20px;
-        width: 85%;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium and larger devices */
+        gap: 40px;
+        padding: 40px;
+        margin-top: -4rem;
     }
-    
     .work-title {
         font-size: 2.3rem;
-    }
-    
-    .work-details {
-        padding: 10px;
-    }
-    
-    .work-box h3 {
-        font-size: 1.1rem;
-    }
-    
-    .work-box .meta {
-        font-size: 0.9rem;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .our-works {
-        padding: 30px;
+        padding: 50px;
     }
-    
     .works-container {
-        width: 80%;
-        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for desktops */
+        gap: 50px;
+        padding: 50px;
+        margin-top: -4.5rem;
     }
-    
     .work-title {
         font-size: 2.5rem;
-    }
-    
-    .work-box h3 {
-        font-size: 1.2rem;
     }
 }
