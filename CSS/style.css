@@ -1874,7 +1874,7 @@ footer {
         gap: 20px;
         padding: 10px;
         margin-top: -2.5rem;
-        width: 50%;
+        
     }
     .work-title {
         font-size: 2rem;
@@ -1898,6 +1898,20 @@ footer {
     }
     .work-title {
         font-size: 2.3rem;
+    }
+
+    .work-box {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        width: 100%;
     }
 }
 
