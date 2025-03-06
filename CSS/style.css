@@ -1919,9 +1919,10 @@ z-index: 2;
     .works-container {
         grid-template-columns: repeat(2, 1fr);
         /* 2 columns for very small devices */
-        gap: 15px;
-        padding: 15px;
+        gap: 25px;
+        padding: 2px;
         margin-top: -2rem;
+       
     }
 
     .work-title {
@@ -1944,14 +1945,14 @@ z-index: 2;
 /* Small devices (phones, 481px to 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
     .our-works {
-        padding: 25px;
+        padding: 50px;
     }
 
     .works-container {
         grid-template-columns: repeat(2, 1fr);
         /* 2 columns for small devices */
         gap: 20px;
-        padding: 10px;
+        
         margin-top: -2.5rem;
 
     }
