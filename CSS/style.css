@@ -1029,7 +1029,6 @@ footer {
     
     .about-content {
         width: 100%;
-        margin-left: 0;
         font-size: 14px;
     }
     
@@ -1098,7 +1097,6 @@ footer {
     
     .about-content {
         width: 85%;
-        margin-left: 7.5%;
         font-size: 15px;
     }
     
@@ -1157,7 +1155,6 @@ footer {
 @media (min-width: 769px) {
     .about-content {
         width: 70%;
-        margin-left: 15%;
         font-size: 18px;
     }
     
@@ -1216,10 +1213,10 @@ footer {
     }
 }
 
-/* Desktop screens - restore original styling where needed */
+/* Desktop screens - adjust content width */
 @media (min-width: 992px) {
     .about-content {
-        margin-left: 40%; /* Restore original layout on desktop */
+        width: 60%; /* Adjusted for better readability on large screens */
     }
 }
 
