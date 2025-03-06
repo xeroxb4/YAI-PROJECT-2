@@ -1872,7 +1872,7 @@ footer {
     .works-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for small devices */
         gap: 20px;
-        padding: 20px;
+        padding: 10px;
         margin-top: -2.5rem;
         width: 50%;
     }
