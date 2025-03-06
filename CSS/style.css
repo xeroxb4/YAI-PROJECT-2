@@ -1807,79 +1807,63 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .our-works {
-        padding: 25px 20px;
-    }
-    
-    .works-container {
-        grid-template-columns: repeat(2, 1fr); /* Maintained 2 columns */
-        gap: 25px;
         padding: 20px;
     }
     
-    .work-box {
-        padding: 12px;
+    .works-container {
+        gap: 15px;
+        width: 90%;
+    }
+    
+    .work-box h3 {
+        font-size: 1rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .our-works {
-        padding: 30px;
+        padding: 25px;
     }
     
     .works-container {
-        grid-template-columns: repeat(2, 1fr); /* Maintained 2 columns */
-        gap: 30px;
-        padding: 25px;
+        gap: 20px;
+        width: 85%;
     }
     
     .work-title {
         font-size: 2.3rem;
     }
     
-    .work-box {
-        padding: 15px;
-        aspect-ratio: 1/2.5;
+    .work-details {
+        padding: 10px;
     }
     
     .work-box h3 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     
-    .work-box p {
-        font-size: 1rem;
+    .work-box .meta {
+        font-size: 0.9rem;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .our-works {
-        padding: 40px;
+        padding: 30px;
     }
     
     .works-container {
-        grid-template-columns: repeat(2, 1fr); /* Maintained 2 columns */
-        gap: 40px;
-        padding: 30px;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 80%;
+        max-width: 1200px;
     }
     
     .work-title {
         font-size: 2.5rem;
     }
     
-    .work-box {
-        padding: 20px;
-        aspect-ratio: 1/2;
-    }
-    
     .work-box h3 {
-        font-size: 1.6rem;
-    }
-    
-    .work-box p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
