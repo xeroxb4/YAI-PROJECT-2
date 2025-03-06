@@ -1856,7 +1856,7 @@ footer {
         padding: 40px;
     }
     .works-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium and larger devices */
+        grid-template-columns: repeat(2, 1fr); /* 3 columns for medium and larger devices */
         gap: 40px;
         padding: 40px;
         margin-top: -4rem;
