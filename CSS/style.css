@@ -1874,6 +1874,7 @@ footer {
         gap: 20px;
         padding: 20px;
         margin-top: -2.5rem;
+        width: 50%;
     }
     .work-title {
         font-size: 2rem;
