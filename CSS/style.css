@@ -1886,7 +1886,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .our-works {
-        padding: 40px;
+        padding: 50px;
     }
     .works-container {
         grid-template-columns: repeat(2, 1fr); 
