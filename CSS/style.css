@@ -1034,6 +1034,7 @@ footer {
     .feature-circle {
         width: 80px;
         height: 80px;
+        animation: orbit 20s linear infinite;
     }
 }
 
@@ -1052,6 +1053,7 @@ footer {
     .feature-circle {
         width: 60px;
         height: 60px;
+        animation: orbit 20s linear infinite;
     }
 
     .about-header, h2 {
