@@ -1728,29 +1728,33 @@ footer {
         width: calc(50% - 12px); /* Two columns with smaller gap */
         flex: 0 0 calc(50% - 12px);
         max-width: calc(50% - 12px);
-        min-height: 340px; /* Slightly reduced height */
+        min-height: 280px; /* Reduced height */
         padding: 12px; /* Slightly reduced padding */
     }
     
     .course-box h3 {
         font-size: 14px;
-        min-height: 36px;
+        min-height: 32px; /* Reduced min-height */
         margin: 6px 0;
     }
     
     .course-box img {
-        height: 150px; /* Smaller images on mobile */
+        height: 120px; /* Reduced image height */
+        width: 100%; /* Ensure full width */
+        object-fit: cover; /* Ensure image covers area properly */
     }
     
     .course-box p {
         font-size: 12px;
-        min-height: 36px;
-        margin: 6px 0 10px;
+        min-height: 32px; /* Reduced min-height */
+        margin: 6px 0 8px; /* Reduced margin */
     }
     
     .apply-btn {
-        padding: 8px 15px;
+        padding: 6px 14px; /* Smaller button */
         font-size: 12px;
+        margin-top: 5px; /* Reduced margin */
+        margin-bottom: 5px; /* Reduced margin */
     }
 }
 
@@ -1762,20 +1766,24 @@ footer {
     }
     
     .course-box {
-        min-height: 320px;
+        min-height: 260px; /* Further reduced height */
         padding: 10px;
     }
     
     .course-box h3 {
         font-size: 13px;
-        min-height: 34px;
+        min-height: 30px; /* Reduced min-height */
     }
     
     .course-box img {
-        height: 130px;
+        height: 110px; /* Further reduced image height */
+    }
+    
+    .course-box p {
+        margin: 5px 0; /* Reduced margins */
+        min-height: 30px; /* Reduced min-height */
     }
 }
-
 
 
 
