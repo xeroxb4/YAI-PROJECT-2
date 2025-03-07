@@ -1116,10 +1116,11 @@ footer {
 @media (max-width: 576px) {
     /* Overall section structure */
     .about-section {
-        padding: 20px 10px;
+        padding: 20px 0; /* Remove horizontal padding */
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     /* Header styling */
@@ -1129,77 +1130,100 @@ footer {
         margin-bottom: 15px;
     }
     
-    /* Complete redesign of circles for mobile */
+    /* Center the circles container */
     .master-circles {
-        width: 180px;  /* Make smaller */
-        height: 180px;
-        margin: 0 auto 15px;
+        width: 280px; /* Increase width slightly */
+        height: 280px; /* Keep aspect ratio */
+        margin: 0 auto 10px;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0; /* Reset any left positioning */
+        right: 0; /* Reset any right positioning */
     }
     
-    /* Make center circle more prominent */
+    /* Keep center circle styling */
     .center-circle {
-        width: 80px;
-        height: 80px;
-        font-size: 12px;
+        width: 110px;
+        height: 110px;
+        font-size: 14px;
         font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 5; /* Ensure it's on top */
-        box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Add shadow for emphasis */
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     
-    /* Make feature circles smaller */
+    /* Style feature circles */
     .feature-circle {
-        width: 45px;
-        height: 45px;
-        font-size: 8px;
+        width: 65px;
+        height: 65px;
+        font-size: 10px;
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
-    /* Adjust orbit distance */
+    /* Adjust orbit animation */
     @keyframes orbit {
         0% {
-            transform: rotate(0deg) translateX(65px) rotate(0deg);
+            transform: rotate(0deg) translateX(105px) rotate(0deg);
         }
         100% {
-            transform: rotate(360deg) translateX(65px) rotate(-360deg);
+            transform: rotate(360deg) translateX(105px) rotate(-360deg);
         }
     }
     
-    /* Update feature circles positions */
-    .feature-circle:nth-child(1) { transform: rotate(0deg) translate(65px) rotate(0deg); }
-    .feature-circle:nth-child(2) { transform: rotate(51.4deg) translate(65px) rotate(-51.4deg); }
-    .feature-circle:nth-child(3) { transform: rotate(102.8deg) translate(65px) rotate(-102.8deg); }
-    .feature-circle:nth-child(5) { transform: rotate(154.2deg) translate(65px) rotate(-154.2deg); }
-    .feature-circle:nth-child(6) { transform: rotate(205.6deg) translate(65px) rotate(-205.6deg); }
-    .feature-circle:nth-child(7) { transform: rotate(257deg) translate(65px) rotate(-257deg); }
-    .feature-circle:nth-child(8) { transform: rotate(308.4deg) translate(65px) rotate(-308.4deg); }
+    /* Update feature circle positions */
+    .feature-circle:nth-child(1) { transform: rotate(0deg) translate(105px) rotate(0deg); }
+    .feature-circle:nth-child(2) { transform: rotate(51.4deg) translate(105px) rotate(-51.4deg); }
+    .feature-circle:nth-child(3) { transform: rotate(102.8deg) translate(105px) rotate(-102.8deg); }
+    .feature-circle:nth-child(5) { transform: rotate(154.2deg) translate(105px) rotate(-154.2deg); }
+    .feature-circle:nth-child(6) { transform: rotate(205.6deg) translate(105px) rotate(-205.6deg); }
+    .feature-circle:nth-child(7) { transform: rotate(257deg) translate(105px) rotate(-257deg); }
+    .feature-circle:nth-child(8) { transform: rotate(308.4deg) translate(105px) rotate(-308.4deg); }
     
-    /* Ensure content appears directly after circles with no gap */
+    /* Full-width content box */
     .about-content {
         width: 100%;
-        font-size: 13px;
-        margin-top: 15px; /* Small gap after circles */
-        padding: 15px;
+        font-size: 14px;
+        margin: 0; /* Remove margins */
+        padding: 20px 15px; /* Add internal padding instead */
         text-align: center;
-        background-color: rgba(0,0,0,0.7); /* Dark background for better text visibility */
-        color: white; /* Light text on dark background */
-        border-radius: 8px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
     }
     
-    /* Make image smaller */
+    /* Profile image styling */
+    .about-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
     .about-image img {
-        max-width: 100px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        margin: 10px auto;
-        border: 2px solid #FFD700; /* Gold border to match brand */
-        display: block;
+        border: 2px solid #FFD700;
+        object-fit: cover;
+    }
+    
+    /* Reset any potential floats or other positioning */
+    .feature-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
     }
 }
 
